@@ -1,16 +1,10 @@
-sentence = str(input("Escreve a frase: "))
+sentence = input("Escreve a frase: ")
 
-frase_nova = ""
 
 def reverse_words(sentence):
-    for palavra in sentence:
-
-        palavra = sentence.split()
-
-        for letras in palavra:
-
-            frase_nova = palavra[::-1]
-
+    palavras = sentence.split()
+    frase_nova = " ".join(palavra[::-1] for palavra in palavras)
     print(frase_nova)
+
 
 reverse_words(sentence)
